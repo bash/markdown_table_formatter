@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Markdown Table Formatter</title>
+  <meta name="color-scheme" content="light dark">
   <script type="text/javascript" src="src/MarkdownTableFormatter.js"></script>
   <script>
 function format_table() {
@@ -29,7 +30,9 @@ function loadExample(example_number) {
 
   </script>
   <style type="text/css">
+:root { color-scheme: light dark; }
 body { background-color: #e6e6e2; }
+@media (prefers-color-scheme: dark) { body { background-color: #020201; } }
 #mainWrapper { width: 850px; margin: auto;}
 textarea { width: 850px; height: 300px; font-family: monospace; font-size: 14px; white-space: pre; word-wrap: normal; overflow-wrap: normal; overflow-x: scroll; }
 .footer { font-size: 13px; }
